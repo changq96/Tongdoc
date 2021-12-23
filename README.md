@@ -33,13 +33,22 @@ if($('#지정한 ID").이벤트 또는 정보 == ){
  }
  </script>
 ajax 사용법
+
 $(function() {
+
  $("#ID").이벤트(function(){
+ 
   선언문;
+  
   $.ajax({
+  
   type : "POST",
-				url : "/board/idCheck",
-				data : {
-					"ID" : $("#ID").val() /* 대,소문자 구분. form과 같은 전송방식이라 네이밍 지정 주의 */
+	url : "/board/idCheck",
+	
+	data : {
+	
+	"ID" : $("#ID").val() /* 대,소문자 구분. form과 같은 전송방식이라 네이밍 지정 주의 */
+	
   success : function(data) {
+  
   해당 조건문
